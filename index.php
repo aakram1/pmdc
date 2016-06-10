@@ -43,7 +43,7 @@ if (mysqli_connect_errno())
 
 
 <?php
-echo "Scene is AWWWN. Phajja Din. Happy Cow/.";
+echo "Scene is AWWWN. Phajja Din. Happy Co   w/.";
 
 			
 //phpinfo();
