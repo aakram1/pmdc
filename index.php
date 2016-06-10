@@ -43,12 +43,8 @@ if (mysqli_connect_errno())
 
 
 <?php
-echo "Scene is AWWWN.";
- 
-for ($i = 1; $i < 6; $i++) 
-	{
-		echo $i;
-			} 
+echo "Scene is AWWWN. Phajja Din. Happy Cow/.";
+
 			
 //phpinfo();
 
