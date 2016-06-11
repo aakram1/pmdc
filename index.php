@@ -24,8 +24,8 @@ require_once('lib/OAuth.php');
 // developers documentation (http://www.yelp.com/developers)
 $CONSUMER_KEY = '_z2cSKBCDv-MSckuAeBSYw';
 $CONSUMER_SECRET = 'BpwBO5RjY9JqhxIME5Br_9PULl0';
-$TOKEN = 'P9Rb6rSJlyqJe-o4zBMG3XSGmJDxGq94';
-$TOKEN_SECRET = ' lFBpFsmFY_MXFKHkDdaJCyonDbg';
+$TOKEN = 'Jjc-xvqPLjN0Vv6C801Wka9yq_5J8G9E';
+$TOKEN_SECRET = 'v2REHLblYBxVR5VXD0p7Evo_bo4';
 $API_HOST = 'api.yelp.com';
 $DEFAULT_TERM = 'dinner';
 $DEFAULT_LOCATION = 'San Francisco, CA';
