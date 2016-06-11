@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 /**
  * Yelp API v2.0 code sample.
@@ -140,9 +139,11 @@ $longopts  = array(
     "term::",
     "location::",
 );
-    
+/*    
 $options = getopt("", $longopts);
 $term = $options['term'] ?: '';
 $location = $options['location'] ?: '';
 query_api($term, $location);
+*/
+query_api("projector", "San Francisco");
 ?>
