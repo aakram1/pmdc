@@ -200,8 +200,7 @@ Released   : 20140309
 				<h2>Phajja Din Muhammad Cola</h2>
 				<span class="byline">Especial Edition</span> </div>
 				<br></br>
-				<p>Event Start Date: <input type="text" id="datepicker" placeholder="Start date"></p>
-				<p>End Date: <input type="text" id="datepicker2" placeholder="End date"></p>
+				<p>Event Dates: <input type="text" id="datepicker" placeholder="Start date"> &nbsp; &nbsp; <input type="text" id="datepicker2" placeholder="End date"></p>
 				<p>Location: <input type="text" placeholder="Location"></p>
 
   				<script>
