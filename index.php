@@ -16,7 +16,7 @@
  * Sample usage of the program:
  * `php sample.php --term="bars" --location="San Francisco, CA"`
  */
-echo "Top of the php";
+//echo "Top of the php";
 // Enter the path that the oauth library is in relation to the php file
 require_once('lib/OAuth.php');
 // Set your OAuth credentials here  
@@ -178,15 +178,15 @@ Released   : 20140309
 	<div id="header-wrapper">
 	<div id="header" class="container">
 		<div id="logo">
-			<h1><a href="#">PlainDisplay</a></h1>
+			<h1><a href="#">PMDC</a></h1>
 		</div>
 		<div id="menu">
 			<ul>
-				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="2" title="">Our Customers</a></li>
-				<li><a href="#" accesskey="3" title="">About Us</a></li>
-				<li><a href="#" accesskey="4" title="">Careers</a></li>
-				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+				<li><a href="#" accesskey="1" title="">About Us</a></li>
+				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+				<li><a href="#" accesskey="3" title="">Careers</a></li>
+				<li><a href="#" accesskey="4" title="">Contact Us</a></li>
+				<li class="current_page_item"><a href="#" accesskey="5" title="">Log In</a></li>
 			</ul>
 		</div>
 	</div>
@@ -203,12 +203,12 @@ Released   : 20140309
 	</div>
 	<div id="extra" class="container">
 		<div class="title">
-			<h2>Praesent scelerisquet</h2>
+			<h2>Events Made Easy</h2>
 			<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span> </div>
 		<div id="three-column">
 			<div class="boxA">
 				<div class="box"> <span class="fa fa-cloud-download"></span>
-					<p>Simplify Group Travel. erwess aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+					<p>Simplify group travel... erwesstorquent per conubia nostra.</p>
 				</div>
 			</div>
 			<div class="boxB">
@@ -223,7 +223,7 @@ Released   : 20140309
 			</div>
 		</div>
 		<ul class="actions">
-			<li><a href="#" class="button">Etiam posuere</a></li>
+			<li><a href="#" class="button">Sign Up</a></li>
 		</ul>
 	</div>
 	<div id="featured">
