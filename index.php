@@ -169,6 +169,9 @@ Released   : 20140309
 <link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -196,8 +199,23 @@ Released   : 20140309
 			<div class="title">
 				<h2>Phajja Din Muhammad Cola</h2>
 				<span class="byline">Especial Edition</span> </div>
+				<p>Event Start Date: <input type="text" id="datepicker"></p>
+				<p>End Date: <input type="text" id="datepicker2"></p>
+				<p>Location: <input type="text"></p>
+
+  				<script>
+  				$(function() {
+  				  $( "#datepicker" ).datepicker();
+  				});
+  				</script>
+  
+   				<script>
+  				$(function() {
+  				  $( "#datepicker2" ).datepicker();
+  				});
+  				</script>
 			<ul class="actions">
-				<li><a href="#" class="button">Enter Cheema Now</a></li>
+				<li><a href="#" class="button">Enter Cheema</a></li>
 			</ul>
 		</div>
 	</div>
@@ -248,7 +266,7 @@ Released   : 20140309
 	</div>
 </div>
 <div id="copyright" class="container">
-	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	<p>&copy; Untitled. All rights reserved.</p>
 </div>
 </body>
 </html>
