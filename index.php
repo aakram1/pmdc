@@ -16,7 +16,7 @@
  * Sample usage of the program:
  * `php sample.php --term="bars" --location="San Francisco, CA"`
  */
-include 'public_html/home.html';
+include 'home.html';
 //echo "Top of the php";
 // Enter the path that the oauth library is in relation to the php file
 require_once('lib/OAuth.php');
