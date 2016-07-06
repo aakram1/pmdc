@@ -62,7 +62,7 @@
 						<input type="text" placeholder="Enter location..."/>
 						<input type="text" id="datepicker" placeholder="Start date"/> 
 						<input type="text" id="datepicker2" placeholder="End date"/>
-						<a href="#" class="button big">Get me started!</a>
+						<a href="#" class="button">Get me started!</a>
 					</li>
 				</ul>
 			</section>

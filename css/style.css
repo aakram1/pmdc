@@ -853,13 +853,6 @@
 			font-size: 0.8em;
 		}
 
-		input[type="submit"].big,
-		input[type="reset"].big,
-		input[type="button"].big,
-		.button.big {
-			font-size: 1.35em;
-		}
-
 		input[type="submit"].alt,
 		input[type="reset"].alt,
 		input[type="button"].alt,
