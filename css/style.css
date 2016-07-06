@@ -645,8 +645,9 @@
 
 			ul.actions li {
 				display: flex;
-				padding: 4rem 4rem;
+				padding: 0 0.5em 0 0;
 				vertical-align: middle;
+				width: 80%;
 			}
 
 				ul.actions li:last-child {
