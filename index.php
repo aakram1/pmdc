@@ -58,7 +58,7 @@
 				<br></br>
 					
 				<ul class="actions">
-					<li class="inline">
+					<li>
 						<input type="text" placeholder="Enter location..."/>
 						<input type="text" id="datepicker" placeholder="Start date"/> 
 						<input type="text" id="datepicker2" placeholder="End date"/>
