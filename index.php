@@ -56,10 +56,12 @@
 				<h2>Ultimate Event Planner</h2>
 				<p>Conferences, off-sites, marketing events, weddings, personal travel events all from one place</p>
 				<br></br>
-					<p>Event Dates: <input type="text" id="datepicker" placeholder="Start date"> &nbsp; &nbsp; <input type="text" id="datepicker2" placeholder="End date"></p>
-				<p>Location: <input type="text" placeholder="Location"></p>
+					
 				<ul class="actions">
 					<li>
+						<input type="text" placeholder="Location"/>
+						<input type="text" id="datepicker" placeholder="Start date"/> 
+						<input type="text" id="datepicker2" placeholder="End date"/>
 						<a href="#" class="button big">Get me started!</a>
 					</li>
 				</ul>
@@ -77,21 +79,21 @@
 							<section class="box">
 								<i class="icon big rounded color1 fa-cloud"></i>
 								<h3>Simplify</h3>
-								<p>Planning individual/group travel, loddging...</p>
+								<p>Planning individual/group travel, lodging...</p>
 							</section>
 						</div>
 						<div class="4u 12u$(medium)">
 							<section class="box">
 								<i class="icon big rounded color9 fa-desktop"></i>
-								<h3>Personalize engagment experience for customers</h3>
+								<h3>Personalize</h3>
 								<p>Convenient and responsive attendee experience...</p>
 							</section>
 						</div>
 						<div class="4u$ 12u$(medium)">
 							<section class="box">
 								<i class="icon big rounded color6 fa-rocket"></i>
-								<h3>Intelligent Budgeting</h3>
-								<p>Be a personal trip or large conference smart budget tracking helps you get more bang for you bucks</p>
+								<h3>Intelligent</h3>
+								<p>smart budget tracking helps you get more bang for the buck</p>
 							</section>
 						</div>
 					</div>
