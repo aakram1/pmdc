@@ -26,18 +26,12 @@
 	}
 
 		ul.actions li {
-			padding: 1em 0 0 0;
+			padding: 4rem;
 			display: flex;
 			text-align: center;
 			width: 100%;
 		}
 
-		ul.actions li.inline {
-			padding: 4rem 0 0 0;
-			display: flex;
-			text-align: center;
-			width: 100%;
-		}
 			ul.actions li:first-child {
 				padding-top: 0;
 			}
