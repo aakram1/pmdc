@@ -31,13 +31,25 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">About Us</a></li> <!-- Meet Asad & Omer, Visision Values, Careers, Contact us -->
-						<li><a href="generic.html"></a>Customer Usecases</li>
+						<li><a href="generic.html"></a>Our Clients</li>
 						<li><a href="elements.html">Help</a></li>
-						<li><a href="#" class="button special">Sign In</a></li>
+						<li><a href="#">Sign In</a></li>
 						<li><a href="#" class="button special">Sign Up</a></li>
 					</ul>
 				</nav>
 			</header>
+
+				<script>
+  				$(function() {
+  				  $( "#datepicker" ).datepicker();
+  				});
+  				</script>
+  
+   				<script>
+  				$(function() {
+  				  $( "#datepicker2" ).datepicker();
+  				});
+  				</script>
 
 		<!-- Banner -->
 			<section id="banner">
