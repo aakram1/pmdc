@@ -110,7 +110,7 @@
 								<ul class="unstyled">
 									<li><a href="#">Our founders</a></li>
 									<li><a href="#">baaREI Values</a></li>
-									<li><a href="#">Help/Contact Us</a></li>
+									<li><a href="#">Contact Us</a></li>
 									<li><a href="#">Careers</a></li>
 									<li><a href="#">baaREI Research</a></li>
 								</ul>
@@ -128,8 +128,6 @@
 							<section class="3u 6u(medium) 12u$(small)">
 								<h3>Businesses</h3>
 								<ul class="unstyled">
-									<li><a href="#">Something they would need to know</a></li>
-									<li><a href="#">Distinctio, inventore quidem nesciunt</a></li>
 									<li><a href="#">Reporting</a></li>
 									<li><a href="#">Secure Information</a></li>
 									<li><a href="#">Terms of Use</a></li>
@@ -138,11 +136,7 @@
 							<section class="3u$ 6u$(medium) 12u$(small)">
 								<h3>Peronsal Events</h3>
 								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Recusandae, culpa necessita nam</a></li>
-									<li><a href="#">Cupiditate, debitis adipisci blandi</a></li>
-									<li><a href="#">Tempore nam, enim quia</a></li>
-									<li><a href="#">Explicabo molestiae dolor labore</a></li>
+									<li><a href="#">Lorem ipsum dolor sit</a></li>>
 								</ul>
 							</section>
 						</div>
