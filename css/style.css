@@ -645,7 +645,7 @@
 
 			ul.actions li {
 				display: flex;
-				padding: 4rem;
+				padding: 4rem 4rem;
 				vertical-align: middle;
 			}
 
