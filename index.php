@@ -14,6 +14,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/popupmenu.js"></script>
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -30,11 +31,11 @@
 				<h1><a href="index.html">baaREI</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">About Us</a></li> <!-- Meet Asad & Omer, Visision Values, Careers, Contact us -->
+						<li><a href="index.html">About Us</a></li> <!-- Meet Asad & Omer, Vision Values, Careers, Contact us -->
 						<li><a href="generic.html"></a>Customers</li>
 						<li><a href="elements.html">Partners</a></li>
 						<li><a href="#">Log In</a></li>
-						<li><a href="#" class="button special">Sign Up</a></li>
+						<li><a href="#" class="button special" onclick="return reveal('signup', 'none')">Sign Up</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -173,7 +174,21 @@
 					</div>
 				</div>
 			</footer>
-
+<form action="signup.php" method="post">
+<div id="signup" class="popup" style="display: none; width: 230px;">
+  <div id="close"><a href="%20"
+ onclick="return close_popup('signup')">x</a></div>
+<input
+id="username" name="username" style="width: 100px;"
+maxlength="20">
+Password:<input
+id="password" name="password" style="width: 100px;" maxlength="20"
+type="password">
+<input name="login1"
+value="Log in" onclick="return checksubmit(this)" type="submit">
+  </div>
+  </div>
+  </form>
 	</body>
 </html>
 

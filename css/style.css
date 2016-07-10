@@ -1211,3 +1211,18 @@
 		.grid-demo .row.flush > div:last-child span {
 			border-radius: 0 4px 4px 0;
 		}
+		
+		
+	/* Popup */	
+		.popup {
+	background-color: #FDFF9B;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: fixed;
+	top: 40%;
+	left: 40%;
+	width: 300px;
+	padding: 10px 20px 20px 20px;
+	color: #000;
+}
