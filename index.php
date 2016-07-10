@@ -169,17 +169,13 @@
 				</div>
 			</footer>
 <form action="signup.php" method="post">
-<div id="signup" class="popup" style="display: none; width: 230px;">
+<div id="signup" class="popup" style="display: none; width: 530px;">
   <div id="close"><a href="%20"
  onclick="return close_popup('signup')">X</a></div>
-<input
-id="username" name="username" style="width: 100px;"
+<input id="username" name="username" style="width: 100px;"
 maxlength="20">
-Password:<input
-id="password" name="password" style="width: 100px;" maxlength="20"
-type="password">
-<input name="login1"
-value="Sign up" onclick="return checksubmit(this)" type="submit">
+Password:<input id="password" name="password" style="width: 100px;" maxlength="20" type="password">
+<input name="login1" value="Sign up" onclick="return checksubmit(this)" type="submit">
   </div>
   </div>
   </form>
