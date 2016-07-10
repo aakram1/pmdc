@@ -171,7 +171,7 @@
 <form action="signup.php" method="post">
 <div id="signup" class="popup" style="display: none; width: 230px;">
   <div id="close"><a href="%20"
- onclick="return close_popup('signup')">x</a></div>
+ onclick="return close_popup('signup')">X</a></div>
 <input
 id="username" name="username" style="width: 100px;"
 maxlength="20">
