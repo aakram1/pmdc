@@ -175,6 +175,7 @@
 <input id="username" name="username" style="width: 100px;"
 maxlength="20">
 Password:<input id="password" name="password" style="width: 100px;" maxlength="20" type="password">
+<input id="zipcode" name="zipcode" style="width: 100px;" maxlength="5">
 <input name="login1" value="Sign up" onclick="return checksubmit(this)" type="submit">
   </div>
   </div>
