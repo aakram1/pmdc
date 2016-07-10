@@ -185,7 +185,7 @@ Password:<input
 id="password" name="password" style="width: 100px;" maxlength="20"
 type="password">
 <input name="login1"
-value="Log in" onclick="return checksubmit(this)" type="submit">
+value="Sign up" onclick="return checksubmit(this)" type="submit">
   </div>
   </div>
   </form>
