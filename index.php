@@ -34,7 +34,7 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">About Us</a></li> <!-- Meet Asad & Omer, Vision Values, Careers, Contact us -->
-						<li><a href="generic.html"></a>Customers</li>
+						<li><a href="generic.html">Customers</a></li>
 						<li><a href="elements.html">Partners</a></li>
 						<li><a href="#">Log In</a></li>
 						<li><button class="button special" data-toggle="modal" data-target="#myModal">Sign Up</button></li>
@@ -182,7 +182,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">x</button>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Sign Up</h4>
       </div>
       <div class="modal-body">
