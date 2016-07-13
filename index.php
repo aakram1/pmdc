@@ -23,9 +23,12 @@
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xsmall.css" />
+			<link rel="stylesheet" href="css/style-small.css" />
+			<link rel="stylesheet" href="css/style-medium.css" />
+			<link rel="stylesheet" href="css/style-large.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
-	</head>
+		</noscript></head>
 	<body class="landing">
 
 		<!-- Header -->
@@ -59,16 +62,14 @@
 				<h2>Ultimate Event Planner</h2>
 				<p>Conferences, off-sites, marketing events, weddings, personal travel events all from one place</p>
 				<br></br>
-					
-				<ul class="actions">
-					<li class="inline">
-						<input type="text" placeholder="Enter location..."/>
-						<input type="text" id="datepicker" placeholder="Start date"/> 
-						<input type="text" id="datepicker2" placeholder="End date"/>
-						<a href="#" class="button">Search</a>
-					</li>
-				</ul>
-			</section>
+
+	<ul class="actions">
+		<li><input type="text" placeholder="Enter location..." /> 
+		<input type="text" id="startDatepicker" placeholder="Start date" /> 
+		<input type="text" id="endDatepicker" placeholder="End date" /> 
+		<input type="text" id="numGuests" placeholder="Number of Guests" /> <ahref="#" class="button">Search</a></li>
+	</ul>
+	</section>
 
 		<!-- One -->
 			<section id="one" class="wrapper style1 special">
@@ -187,7 +188,7 @@
       </div>
       <div class="modal-body">
       <div class="container">    
-        <div id="loginbox" class="mainbox">                    
+        <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
