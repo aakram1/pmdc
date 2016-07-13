@@ -640,14 +640,11 @@
 		ul.actions {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
 		}
 
 			ul.actions li {
 				display: flex;
-				padding: 0.5em 0.5em 0 0;
 				vertical-align: middle;
-				width: 80%;
 			}
 
 				ul.actions li:last-child {
