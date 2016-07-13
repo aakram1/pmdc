@@ -18,8 +18,8 @@
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -55,6 +55,26 @@
   				$(function() {
   				  $( "#endDatepicker" ).datepicker();
   				});
+  				$( function() {
+  	  				 
+  				    $( "#city" ).autocomplete({
+  				      source: function( request, response ) {
+  				        $.ajax( {
+  				          url: "http://gd.geobytes.com/AutoCompleteCity",
+  				          dataType: "jsonp",
+  				          data: {
+  				            q: request.term
+  				          },
+  				          success: function( data ) {
+  				 
+  				            // Handle 'no match' indicated by [ "" ] response
+  				            response( data.length === 1 && data[ 0 ].length === 0 ? [] : data );
+  				          }
+  				        } );
+  				      },
+  				      minLength: 3
+  				    } );
+  				  } );
   				</script>
 
 		<!-- Banner -->
@@ -64,7 +84,7 @@
 				<br></br>
 
 	<ul class="actions">
-		<li><input type="text" placeholder="Enter location..." /> 
+		<li><input type="text" id="city" placeholder="Enter location..." /> 
 		<input type="text" id="startDatepicker" placeholder="Start date" /> 
 		<input type="text" id="endDatepicker" placeholder="End date" /> 
 		<input type="text" id="numGuests" placeholder="Number of Guests" /> <ahref="#" class="button">Search</a></li>
