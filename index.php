@@ -176,7 +176,7 @@
 
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog" style="top: 50%; transform: translateY(-50%);">
+<div id="myModal" class="modal fade" role="dialog" style="top: 30%;">
 <form action="signup.php" method="post">
   <div class="modal-dialog">
     <!-- Modal content-->
