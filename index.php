@@ -187,12 +187,6 @@
       </div>
       <div class="modal-body">
         <p>Phajja Din</p>
-        <input id="username" name="username" style="width: 100px;"
-maxlength="20">
-Password:<input id="password" name="password" style="width: 100px;" maxlength="20" type="password">
-<input id="zipcode" name="zipcode" style="width: 100px;" maxlength="5">
-<input name="login1" value="Sign up" onclick="return checksubmit(this)" type="submit">
-      </div>
       <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
@@ -322,13 +316,10 @@ Password:<input id="password" name="password" style="width: 100px;" maxlength="2
                                 </div>
                                 
                                 
-                                
+            
                             </form>
                          </div>
-                    </div>
-
-               
-               
+                    </div>       
                 
          </div> 
     </div>
