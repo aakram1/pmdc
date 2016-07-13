@@ -15,7 +15,9 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/popupmenu.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<noscript>
@@ -35,7 +37,7 @@
 						<li><a href="generic.html"></a>Customers</li>
 						<li><a href="elements.html">Partners</a></li>
 						<li><a href="#">Log In</a></li>
-						<li><a href="#" class="button special" onclick="return reveal('signup', 'none')">Sign Up</a></li>
+						<li><button class="button special" data-toggle="modal" data-target="#myModal">Sign Up</button></li>
 					</ul>
 				</nav>
 			</header>
@@ -168,18 +170,37 @@
 					</div>
 				</div>
 			</footer>
+
+
+  
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
 <form action="signup.php" method="post">
-<div id="signup" class="popup" style="display: none; width: 530px;">
-  <div id="close"><a href="%20"
- onclick="return close_popup('signup')">X</a></div>
-<input id="username" name="username" style="width: 100px;"
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+        <p>Phajja Din</p>
+        <input id="username" name="username" style="width: 100px;"
 maxlength="20">
 Password:<input id="password" name="password" style="width: 100px;" maxlength="20" type="password">
 <input id="zipcode" name="zipcode" style="width: 100px;" maxlength="5">
 <input name="login1" value="Sign up" onclick="return checksubmit(this)" type="submit">
-  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
   </div>
   </form>
+</div>
 	</body>
 </html>
 
