@@ -47,13 +47,13 @@
 
 				<script>
   				$(function() {
-  				  $( "#datepicker" ).datepicker();
+  				  $( "#startDatepicker" ).datepicker();
   				});
   				</script>
   
    				<script>
   				$(function() {
-  				  $( "#datepicker2" ).datepicker();
+  				  $( "#endDatepicker" ).datepicker();
   				});
   				</script>
 
