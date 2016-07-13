@@ -204,14 +204,13 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Sign Up</h4>
       </div>
       <div class="modal-body">
       <div class="container">    
-        <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+        <div id="loginbox" class="mainbox col-md-6 col-sm-8">                    
             <div class="panel panel-info" >
                     <div class="panel-heading">
-                        <div class="panel-title">Sign In</div>
+                    <div class="panel-title">Sign In</div>
                         <div style="font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
                     </div>     
 
@@ -263,7 +262,7 @@
                         </div>                     
                     </div>  
         </div>
-        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div id="signupbox" style="display:none;" class="mainbox col-md-6 col-sm-8">
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <div class="panel-title">Sign Up</div>
