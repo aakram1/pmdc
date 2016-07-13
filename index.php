@@ -122,9 +122,9 @@
 							<section class="3u 6u$(medium) 12u$(small)">
 								<h3>Customer Success Stories</h3>
 								<ul class="unstyled">
-									<li><a href="#">Facebook F8 planning</a></li>
-									<li><a href="#">Salesforce dreamforce planning</a></li>
-									<li><a href="#">How Delphix uses baaREI</a></li>
+									<li><a href="#">Fadfhg F8 planning</a></li>
+									<li><a href="#">Safgd dreamforce planning</a></li>
+									<li><a href="#">How DDD uses baaREI</a></li>
 									<li><a href="#">John's Euro trip</a></li>
 									<li><a href="#">Maria's wedding</a></li>
 								</ul>
@@ -192,7 +192,7 @@
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
-                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                        <div style="font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
                     </div>     
 
                     <div style="padding-top:30px" class="panel-body" >
@@ -210,9 +210,7 @@
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                         <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
                                     </div>
-                                    
-
-                                
+                                                 
                             <div class="input-group">
                                       <div class="checkbox">
                                         <label>
@@ -221,18 +219,13 @@
                                       </div>
                                     </div>
 
-
                                 <div style="margin-top:10px" class="form-group">
                                     <!-- Button -->
-
                                     <div class="col-sm-12 controls">
                                       <a id="btn-login" href="#" class="btn btn-success">Login  </a>
                                       <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
-
                                     </div>
                                 </div>
-
-
                                 <div class="form-group">
                                     <div class="col-md-12 control">
                                         <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
@@ -254,7 +247,7 @@
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <div class="panel-title">Sign Up</div>
-                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                            <div style="font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
                         </div>  
                         <div class="panel-body" >
                             <form id="signupform" class="form-horizontal" role="form">
@@ -264,7 +257,6 @@
                                     <span></span>
                                 </div>
                                     
-                                
                                   
                                 <div class="form-group">
                                     <label for="email" class="col-md-3 control-label">Email</label>
@@ -272,7 +264,6 @@
                                         <input type="text" class="form-control" name="email" placeholder="Email Address">
                                     </div>
                                 </div>
-                                    
                                 <div class="form-group">
                                     <label for="firstname" class="col-md-3 control-label">First Name</label>
                                     <div class="col-md-9">
