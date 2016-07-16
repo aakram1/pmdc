@@ -1,13 +1,11 @@
 <?php
 
-// dh_phpmyadmin/mysql.smscric.com/
-// dbserver: mysql.smscric.com
-// dbname: smscric_users
+// dbname: pmdcregister
 // table-name: UserInfo
 // DB, DBUSER, DBPASS, DBSERVER, USERS
 
 // require common code
-    require_once("inc/common.inc"); 
+    require_once("php/inc/common.inc"); 
 
 
 /* check table for username- inherited username */
