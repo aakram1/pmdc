@@ -87,7 +87,7 @@ session_start();
 		<li><input type="text" id="city" name="city" placeholder="Enter location..." /> 
 		<input type="text" id="startDatepicker" name="startdate" placeholder="Start date" /> 
 		<input type="text" id="endDatepicker" name="enddate" placeholder="End date" /> 
-		<input type="text" id="numGuests" name="numguests" placeholder="Number of Guests" /> <ahref="#" class="button" type="submit">Search</a></li>
+		<input type="text" id="numGuests" name="numguests" placeholder="Number of Guests" /> <input class="button" type="submit">Search</input></li>
 	</ul>
 	</form>
 	</section>
