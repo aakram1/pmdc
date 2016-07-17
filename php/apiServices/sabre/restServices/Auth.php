@@ -5,7 +5,7 @@ class Auth {
     private $config;
     
     public function __construct() {
-        $this->config = SACSConfig::getInstance();
+        $this->config = ApiConfig::getInstance();
     }
     
     public function callForToken() {
