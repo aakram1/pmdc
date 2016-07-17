@@ -9,10 +9,10 @@ class ApiConfig {
     }
     
     public static function getInstance() {
-        if (SACSConfig::$instance === null) {
-            SACSConfig::$instance = new SACSConfig();
+        if (ApiConfig::$instance === null) {
+            ApiConfig::$instance = new ApiConfig();
         }
-        return SACSConfig::$instance;
+        return ApiConfig::$instance;
     }
     
     public function getRestProperty($propertyName) {

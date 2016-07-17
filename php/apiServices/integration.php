@@ -13,13 +13,13 @@ $workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode
 echo "HERE";
 $result = $workflow->runWorkflow();
 echo "HERE 2";
-ob_start();
-var_dump($result);
-$dump = ob_get_clean();
-echo $dump;
+//ob_start();
+//var_dump($result);
+//$dump = ob_get_clean();
+//echo $dump;
 echo $destination1;
 echo $startdate;
 echo $enddate;
 echo $numGuests;
-flush();
+//flush();
 ?>
