@@ -42,9 +42,12 @@ class RestClient {
         switch ($callType) {
         case GET:
             $url = $path;
+            echo $path;
+            echo $request;
             if ($request != null) {
                 $url = $this->config->getRestProperty("environment").$path.'?'.http_build_query($request);
             }
+            echo $url;
             curl_setopt($ch, CURLOPT_URL, $url);
             break;
         case POST:
