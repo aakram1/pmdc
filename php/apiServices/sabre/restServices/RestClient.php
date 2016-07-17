@@ -1,6 +1,6 @@
 <?php
 include_once 'configuration/ApiConfig.php';
-include_once 'restServices/TokenHolder.php';
+include_once 'TokenHolder.php';
 define("GET", "GET");
 define("POST", "POST");
 define("PUT", "PUT");
