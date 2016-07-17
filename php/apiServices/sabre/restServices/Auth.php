@@ -24,6 +24,7 @@ class Auth {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         curl_close($ch);
+        echo $result;
         return json_decode($result);
     }
     
@@ -32,6 +33,7 @@ class Auth {
                 $this->config->getRestProperty("userId").":".
                 $this->config->getRestProperty("group").":".
                 $this->config->getRestProperty("domain");
+        echo $credentials;
         $secret = base64_encode($this->config->getRestProperty("clientSecret"));
         return base64_encode(base64_encode($credentials).":".$secret);
     }
