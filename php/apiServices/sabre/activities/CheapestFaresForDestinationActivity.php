@@ -15,7 +15,7 @@ class CheapestFaresForDestinationActivity implements Activity {
         $call = new RestClient();
         $result = $call->executeGetCall("/v1/shop/flights/cheapest/fares/" + $this->destination, $this->getRequest($this->countryCode));
         $sharedContext->addResult("LowestFares", $result);
-        return new InstaFlightActivity();
+        return null;
     }
     
     private function getRequest($countryCode) {
