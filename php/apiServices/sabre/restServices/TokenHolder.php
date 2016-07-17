@@ -16,5 +16,4 @@ class TokenHolder {
         return TokenHolder::$token;
     }
 }
-
 ?>
