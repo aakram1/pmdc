@@ -1,5 +1,5 @@
 <?php
-include_once 'rest/Auth.php';
+include_once 'restServices/Auth.php';
 class TokenHolder {
     private static $token = null;
     
