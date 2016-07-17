@@ -14,15 +14,16 @@ class CheapestFaresForDestinationActivity implements Activity {
         $sharedContext->addResult("destination", $this->destination);
         $call = new RestClient();
         echo "building call";
-        $result = $call->executeGetCall("/v1/shop/flights/cheapest/fares/" + $this->destination, $this->getRequest($this->countryCode));
+        $result = $call->executeGetCall("/v1/shop/flights/cheapest/fares/", $this->getRequest($this->countryCode, $this->destination));
         echo "Call executed";
         echo $result;
         $sharedContext->addResult("LowestFares", $result);
         return null;
     }
     
-    private function getRequest($countryCode) {
+    private function getRequest($countryCode, $destination) {
         $request = array(
+        		":destination" => $destination,
                 "pointofsalecountry" => $countryCode
         );
         return $request;
