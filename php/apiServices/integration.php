@@ -11,13 +11,16 @@ $numGuests = $_GET["numGuests"];
 
 //$origin = filter_input(INPUT_POST, "countryCode");
 //$destination = filter_input(INPUT_POST, "destination");
-$workflow = new Workflow(new CheapestFaresForDestinationActivity($countryCode, $destination));
-$result = $workflow->runWorkflow();
-ob_start();
-var_dump($result);
-$dump = ob_get_clean();
-echo $dump;
+//$workflow = new Workflow(new CheapestFaresForDestinationActivity($countryCode, $destination));
+//$result = $workflow->runWorkflow();
+//ob_start();
+//var_dump($result);
+//$dump = ob_get_clean();
+//echo $dump;
 echo $destination1;
-flush();
+echo $startdate;
+echo $enddate;
+echo $numGuests;
+//flush();
 
 ?>
