@@ -82,7 +82,7 @@ session_start();
 				<h2>Ultimate Event Planner</h2>
 				<p>Conferences, off-sites, marketing events, weddings, personal travel events all from one place</p>
 				<br></br>
-<form action="php/apiServices/sabre/integration.php" method="get">
+<form action="../php/apiServices/sabre/integration.php" method="get">
 	<ul class="actions">
 		<li><input type="text" id="city" name="city" placeholder="Enter location..." /> 
 		<input type="text" id="startDatepicker" name="startdate" placeholder="Start date" /> 
