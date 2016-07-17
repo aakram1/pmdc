@@ -10,7 +10,9 @@ $enddate = $_GET["enddate"];
 $numGuests = $_GET["numguests"];
 
 $workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination));
+echo "HERE";
 $result = $workflow->runWorkflow();
+echo "HERE 2";
 ob_start();
 var_dump($result);
 $dump = ob_get_clean();

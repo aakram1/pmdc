@@ -13,8 +13,10 @@ class ApiRequests {
     public function runWorkflow() {
         $this->sharedContext = new SharedContext();
         $next = $this->startActivity;
+        echo "run workflow";
         while($next) {
             $next = $next->run($this->sharedContext);
+            echo "in loop";
         }
         return $this->sharedContext;
     }
