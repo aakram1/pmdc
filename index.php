@@ -1,5 +1,5 @@
 <?php
-//enter stuff
+session_start();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -82,13 +82,14 @@
 				<h2>Ultimate Event Planner</h2>
 				<p>Conferences, off-sites, marketing events, weddings, personal travel events all from one place</p>
 				<br></br>
-
+<form action="php/apiServices/sabre/integration.php" method="get">
 	<ul class="actions">
-		<li><input type="text" id="city" placeholder="Enter location..." /> 
-		<input type="text" id="startDatepicker" placeholder="Start date" /> 
-		<input type="text" id="endDatepicker" placeholder="End date" /> 
-		<input type="text" id="numGuests" placeholder="Number of Guests" /> <ahref="#" class="button">Search</a></li>
+		<li><input type="text" id="city" name="city" placeholder="Enter location..." /> 
+		<input type="text" id="startDatepicker" name="startdate" placeholder="Start date" /> 
+		<input type="text" id="endDatepicker" name="enddate" placeholder="End date" /> 
+		<input type="text" id="numGuests" name="numguests" placeholder="Number of Guests" /> <ahref="#" class="button" type="submit">Search</a></li>
 	</ul>
+	</form>
 	</section>
 
 		<!-- One -->
