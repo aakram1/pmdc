@@ -19,5 +19,5 @@ echo $destination1;
 echo $startdate;
 echo $enddate;
 echo $numGuests;
-
+flush();
 ?>
