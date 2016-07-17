@@ -6,7 +6,7 @@ class ApiRequests {
     private $sharedContext;
     private $startActivity;
     
-    public function Workflow(&$startActivity) {
+    public function ApiRequests(&$startActivity) {
         $this->startActivity = $startActivity;
     }
     
