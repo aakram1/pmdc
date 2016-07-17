@@ -2,7 +2,8 @@
 include_once 'workflow/ApiRequests.php';
 include_once 'activities/CheapestFaresForDestinationActivity.php';
 
-$destination = $_GET["city"];
+$destination1 = $_GET["city"];
+$destination = "SFO";
 $countryCode = "US";
 $startdate = $_GET["startdate"];
 $enddate = $_GET["enddate"];
@@ -16,6 +17,7 @@ ob_start();
 var_dump($result);
 $dump = ob_get_clean();
 echo $dump;
+echo $destination1;
 flush();
 
 ?>
