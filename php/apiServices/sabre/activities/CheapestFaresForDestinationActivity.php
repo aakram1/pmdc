@@ -1,6 +1,6 @@
 <?php
-include_once 'workflow/Activity.php';
-include_once 'rest/RestClient.php';
+include_once 'sabre/workflow/Activity.php';
+include_once 'restServices/RestClient.php';
 class CheapestFaresForDestinationActivity implements Activity {
     private $destination, $countryCode;
     
