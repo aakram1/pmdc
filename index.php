@@ -6,7 +6,7 @@ session_start();
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>baaREI</title>
+		<title>baarei</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -170,7 +170,7 @@ session_start();
 						<div class="8u 12u$(medium)">
 							<ul class="copyright">
 								<li>&copy; Untitled. All rights reserved.</li>
-								<li>baaREI Inc.</li>
+								<li>baarei Inc.</li>
 							</ul>
 						</div>
 						<div class="4u$ 12u$(medium)">
