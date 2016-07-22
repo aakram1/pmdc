@@ -19,7 +19,7 @@ var_dump($result);
 $dump = ob_get_clean();
 
 //$jasonbhai = json_decode($result);
-echo $result[2];
+echo $dump[2];
 //$jasonbhai =;
 //var_dump(json_decode($dump, true));
 //var_dump($jasonbhai);
