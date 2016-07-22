@@ -13,7 +13,7 @@ ob_start();
 var_dump($result);
 $dump = ob_get_clean();
 
-$jasonbhai = json_decode($dump, true);
+$jasonbhai = json_decode($dump);
 foreach ($jasonbhai as $k=>$v){
 	echo '<br>'.$v; // etc.
 }
