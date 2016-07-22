@@ -33,9 +33,9 @@ $jasonpa = json_encode($dump);
 
 $jasonbhai = explode("\n", $jasonpa);
 //$jasonbhai = json_decode($result);
-for ($i = 0; $i <= 1000; $i++) {
+for ($i = 0; $i <= 25; $i++) {
 	echo $jasonbhai[$i]."<br>";
-}
+	}
 
 
 /*
