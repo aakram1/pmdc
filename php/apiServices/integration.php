@@ -1,6 +1,7 @@
 <?php
 include_once 'sabre/workflow/ApiRequests.php';
 include_once 'sabre/activities/CheapestFaresForDestinationActivity.php';
+include_once 'sabre/activities/TopCitiesFlightsEstimates.php';
 
 $destination = $_GET["city"];
 $startdate = $_GET["startdate"];
