@@ -28,7 +28,7 @@ var_dump($result);
 //$jasonbhai = print_r(json_decode($result));
 $dump = ob_get_clean();
 
-$jasonpa = json_encode($dump);
+$jasonpa = json_encode($dump,JSON_FORCE_OBJECT);
 //echo $jasonpa;
 
 $jasonbhai = explode("\n", $jasonpa);
