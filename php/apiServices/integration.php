@@ -19,7 +19,10 @@ var_dump($result);
 $dump = ob_get_clean();
 
 //$jasonbhai = json_decode($result);
-echo $dump[2];
+for ($i = 1; $i <= 10; $i++) {
+	echo $dump[$i].'<br>';
+}
+
 //$jasonbhai =;
 //var_dump(json_decode($dump, true));
 //var_dump($jasonbhai);
