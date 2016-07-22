@@ -13,9 +13,7 @@ class CheapestFaresForDestinationActivity implements Activity {
         $sharedContext->addResult("pointofsalecountry", $this->countryCode);
         $sharedContext->addResult("destination", $this->destination);
         $call = new RestClient();
-        echo "building call";
         $result = $call->executeGetCall("/v1/shop/flights/cheapest/fares/" . $this->destination, $this->getRequest($this->countryCode));
-        echo "Call executed";
         $sharedContext->addResult("LowestFares", $result);
     }
     

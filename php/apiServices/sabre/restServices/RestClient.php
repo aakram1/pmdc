@@ -38,7 +38,6 @@ class RestClient {
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $headers = $this->buildHeaders();
-        echo "prepared call";
         switch ($callType) {
         case GET:
             $url = $path;
