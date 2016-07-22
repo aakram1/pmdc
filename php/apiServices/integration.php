@@ -17,10 +17,9 @@ var_dump($result);
 $dump = ob_get_clean();
 
 //echo $dump;
-$jasonbhai = json_decode($dump);
-foreach ($jasonbhai as $k=>$v){
-	echo $v; 
-}
+//$jasonbhai =;
+var_dump(json_decode($dump));
+
 
 flush();
 
