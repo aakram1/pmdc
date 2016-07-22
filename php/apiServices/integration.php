@@ -12,13 +12,14 @@ $countryCode = "US";
 
 $workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
 $result = $workflow->runWorkflow();
-ob_start();
+//ob_start();
 var_dump($result);
-$dump = ob_get_clean();
+//$dump = ob_get_clean();
 
-//echo $dump;
+//$ar = json_decode($json);
+echo $result;
 //$jasonbhai =;
-var_dump(json_decode($dump, true));
+//var_dump(json_decode($dump, true));
 
 
 flush();
