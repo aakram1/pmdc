@@ -10,8 +10,8 @@ $numGuests = $_GET["numguests"];
 $destination1 = "SFO";
 $countryCode = "US";
 
-$workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
-$result = $workflow->runWorkflow();
+//$workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
+//$result = $workflow->runWorkflow();
 
 $workflow2 = new ApiRequests(new TopCitiesFlightsEstimates("LAX",["SFO","ORD"], "12/12/2016", "12/16/2016"));
 $result2 = $workflow2->runWorkflow();
@@ -36,7 +36,7 @@ echo $dump2;
 //var_dump($jasonbhai);
 //echo $jasonbhai[0];
 
-//flush();
+flush();
 
 
 
