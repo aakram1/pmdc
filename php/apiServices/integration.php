@@ -28,12 +28,16 @@ var_dump($result);
 //$jasonbhai = print_r(json_decode($result));
 $dump = ob_get_clean();
 
+$jasonpa = $json_encode("$dump");
+echo $jasonpa;
 
+/*
 $jasonbhai = explode(" ", $dump);
 //$jasonbhai = json_decode($result);
-for ($i = 0; $i <= 25; $i++) {
+for ($i = 0; $i <= 1000; $i++) {
 echo $jasonbhai[$i]."<br>";
 }
+*/
 //var_dump(json_decode($dump, true));
 //var_dump($jasonbhai);
 //echo $jasonbhai[0];
