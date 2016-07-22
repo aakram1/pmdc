@@ -31,10 +31,10 @@ $dump = ob_get_clean();
 $jasonpa = json_encode($dump);
 //echo $jasonpa;
 
-//$jasonbhai = explode(" ", $dump);
+$jasonbhai = explode("\n", $jasonpa);
 //$jasonbhai = json_decode($result);
 for ($i = 0; $i <= 1000; $i++) {
-	echo $jasonpa[$i]."<br>";
+	echo $jasonbhai[$i]."<br>";
 }
 
 
