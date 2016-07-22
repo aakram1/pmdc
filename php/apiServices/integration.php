@@ -29,7 +29,13 @@ var_dump($result);
 $dump = ob_get_clean();
 
 $jasonpa = json_encode($dump);
-echo $jasonpa;
+//echo $jasonpa;
+
+//$jasonbhai = explode(" ", $dump);
+//$jasonbhai = json_decode($result);
+for ($i = 0; $i <= 1000; $i++) {
+	echo $jasonpa[$i]."<br>";
+}
 
 
 /*
