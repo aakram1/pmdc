@@ -24,7 +24,8 @@ $result = $workflow->runWorkflow();
 
 
 ob_start();
-$jasonbhai = print_r(json_decode($result));
+var_dump($result);
+//$jasonbhai = print_r(json_decode($result));
 $dump = ob_get_clean();
 
 
