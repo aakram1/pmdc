@@ -14,7 +14,7 @@ $countryCode = "US";
 //$workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
 //$result = $workflow->runWorkflow();
 
-$workflow2 = new ApiRequests(new TopCitiesFlightsEstimates("LAX",["SFO","ORD"], "12/12/2016", "12/16/2016"));
+$workflow2 = new ApiRequests(new TopCitiesFlightsEstimates("LAX",["SFO","ORD"], "2016-12-13", "2016-12-16"));
 $result2 = $workflow2->runWorkflow();
 
 ob_start();
