@@ -18,7 +18,7 @@ $dump = ob_get_clean();
 
 //echo $dump;
 //$jasonbhai =;
-var_dump(json_decode($dump));
+var_dump(json_decode($dump, true));
 
 
 flush();
