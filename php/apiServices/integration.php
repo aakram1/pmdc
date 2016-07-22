@@ -30,6 +30,7 @@ $dump = ob_get_clean();
 
 $jasonpa = $json_encode("$dump");
 echo $jasonpa;
+echo "<br>";
 
 /*
 $jasonbhai = explode(" ", $dump);
