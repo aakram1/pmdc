@@ -7,7 +7,10 @@ $startdate = $_GET["startdate"];
 $enddate = $_GET["enddate"];
 $numGuests = $_GET["numguests"];
 
-$workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination));
+$destination1 = "SFO";
+$countryCode = "US";
+
+$workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
 $result = $workflow->runWorkflow();
 //ob_start();
 //var_dump($result);
