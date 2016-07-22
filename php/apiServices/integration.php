@@ -15,7 +15,7 @@ $dump = ob_get_clean();
 
 $jasonbhai = json_decode($dump);
 foreach ($jasonbhai as $k=>$v){
-	echo '<br>'.$v; // etc.
+	echo $v; 
 }
 //echo $dump;
 flush();
