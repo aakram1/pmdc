@@ -15,12 +15,12 @@ $result = $workflow->runWorkflow();
 
 
 //ob_start();
-print_r($result);
+$jasonbhai = print_r($result);
 //$dump = ob_get_clean();
 
 //$jasonbhai = json_decode($result);
 for ($i = 0; $i <= 100; $i++) {
-	echo $result[$i].'<br>';
+	echo $jasonbhai[$i].'<br>';
 }
 
 //$jasonbhai =;
