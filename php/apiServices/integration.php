@@ -20,6 +20,7 @@ $jasonbhai = json_decode($result);
 //echo $result;
 //$jasonbhai =;
 //var_dump(json_decode($dump, true));
+var_dump($jasonbhai);
 echo $jasonbhai[0];
 
 flush();
