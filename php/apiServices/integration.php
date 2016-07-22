@@ -28,10 +28,10 @@ $jasonbhai = print_r(json_decode($result));
 $dump = ob_get_clean();
 
 
-$jasonbhai = explode($dump);
+$jasonbhai = explode(" ", $dump);
 //$jasonbhai = json_decode($result);
 for ($i = 0; $i <= 25; $i++) {
-echo $jasonbhai[$i].'<br>';
+echo $jasonbhai[$i]."<br>";
 }
 //var_dump(json_decode($dump, true));
 //var_dump($jasonbhai);
