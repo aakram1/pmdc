@@ -29,7 +29,8 @@ class TopCitiesFlightsEstimates implements Activity {
         	"origin" => $origin,
         	"destination" => $destination,
         	"departuredate" => $departureDate,
-        	"returndate" => $returnDate
+        	"returndate" => $returnDate,
+        	"limit"=> "1"
         );
         return $request;
     }
