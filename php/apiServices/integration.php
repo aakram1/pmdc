@@ -19,7 +19,7 @@ print_r($result);
 $dump = ob_get_clean();
 
 //$jasonbhai = json_decode($result);
-for ($i = 1; $i <= 10; $i++) {
+for ($i = 0; $i <= 100; $i++) {
 	echo $dump[$i].'<br>';
 }
 
