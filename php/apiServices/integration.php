@@ -9,11 +9,11 @@ $numGuests = $_GET["numguests"];
 
 $workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination));
 $result = $workflow->runWorkflow();
-ob_start();
-var_dump($result);
-$dump = ob_get_clean();
+//ob_start();
+//var_dump($result);
+//$dump = ob_get_clean();
 
-//echo $dump;
+echo $result;
 $jasonbhai = json_decode($result);
 foreach ($jasonbhai as $k=>$v){
 	echo $v; 
