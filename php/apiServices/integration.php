@@ -14,13 +14,13 @@ $workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode
 $result = $workflow->runWorkflow();
 
 
-ob_start();
-print_r($result);
-$dump = ob_get_clean();
+//ob_start();
+//print_r($result);
+//$dump = ob_get_clean();
 
 //$jasonbhai = json_decode($result);
 for ($i = 0; $i <= 100; $i++) {
-	echo $dump[$i].'<br>';
+	echo $result[$i].'<br>';
 }
 
 //$jasonbhai =;
@@ -28,7 +28,7 @@ for ($i = 0; $i <= 100; $i++) {
 //var_dump($jasonbhai);
 //echo $jasonbhai[0];
 
-flush();
+//flush();
 
 
 
