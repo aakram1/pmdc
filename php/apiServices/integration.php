@@ -32,8 +32,8 @@ for ($i = 0; $i <= 100; $i++) {
 	echo $jasonbhai[$i]."<br>";
 }
 */
-print_r($jasonbhaiwf1);
-
+print_r($jasonwf1);
+flush();
 
 
 
