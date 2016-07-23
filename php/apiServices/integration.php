@@ -27,7 +27,7 @@ $jasonwf1 = array_filter($jasonbhai);
 
 
 $j=0;
-for ($i = 0; $i <= 100; $i++) {
+for ($i = 0; $i <= 1000; $i++) {
 	
 	if (preg_match("\Fare", $jasonwf1[i])) {
 		$cleaned[$j] = $jasonwf1[i+1];
