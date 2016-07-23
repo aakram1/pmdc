@@ -29,6 +29,7 @@ $jasonwf1 = array_filter($jasonbhai);
 $j=0;
 for ($i = 0; $i <= 1000; $i++) {
 	
+	echo $jasonwf1[i];
 	if (stripos($jasonwf1[i], "Fare")) {
 		$cleaned[$j] = $jasonwf1[i+1];
 		echo $cleaned[$j];
