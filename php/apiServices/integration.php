@@ -31,9 +31,9 @@ for ($i = 0; $i <= 100; $i++) {
 	(preg_match("/php/i"
 	echo $jasonbhai[$i]."<br>";
 }
-
-print_r($jasonbhai2);
 */
+print_r($jasonbhai2);
+
 
 
 
