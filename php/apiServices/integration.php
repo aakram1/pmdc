@@ -24,6 +24,34 @@ $data = json_decode($dump, true);
 //print_r($testicle);
 
 
+class FareInfo
+{
+	public $id;
+	public $city;
+	public $coords;
+	public $destinationRank; /* optional */
+	public $currencyCode;
+	public $theme; /* optional */
+	public $fares = array();
+}
+
+class Geo {
+	public $latitude;
+	public $longitude;
+	public function __construct($latitude, $longitude)
+	{
+		$this->latitude = $latitude;
+		$this->longitude = $longitude;
+	}
+}
+class Fare
+{
+	public $lowestFare;
+	public $lowestNonStopFare;
+	public $departureDateTime;
+	public $returnDateTime;
+}
+
  if (isset($data['FareInfo'])) {
             $fares = $data['FareInfo'];
             foreach ($fares as $fare) {
