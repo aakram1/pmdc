@@ -19,12 +19,12 @@ ob_start();
 var_dump($result);
 $dump = ob_get_clean();
 
-$testicle = json_decode($dump, true);
-echo $testicle['FareInfo'];
-print_r($testicle);
+$data = json_decode($dump, true);
+//echo $testicle['FareInfo'];
+//print_r($testicle);
 
-/*
- * if (isset($data['FareInfo'])) {
+
+ if (isset($data['FareInfo'])) {
             $fares = $data['FareInfo'];
             foreach ($fares as $fare) {
                 $fareInfo = new FareInfo();
@@ -54,7 +54,7 @@ print_r($testicle);
             }
         }
         return json_encode(array_values($list->items));
- */
+ 
 
 /*
 //$jasonbhai = print_r(json_decode($result));
