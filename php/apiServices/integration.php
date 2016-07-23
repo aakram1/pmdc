@@ -24,6 +24,7 @@ echo $dump;
 $testicle = unserialize($dump);
 echo $testicle;
 
+/*
 //$jasonbhai = print_r(json_decode($result));
 $jasonpa = json_encode($dump,JSON_FORCE_OBJECT);
 $jasonbhai = explode(" ", $jasonpa);
@@ -70,6 +71,7 @@ for ($i = 0; $i <= 25; $i++) {
 	echo $jasonbhai[$i]."<br>";
 	}
 */	
+
 
 flush();
 
