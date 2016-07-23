@@ -20,7 +20,7 @@ var_dump($result);
 $dump = ob_get_clean();
 
 //$jasonbhai = print_r(json_decode($result));
-$jasonpa = json_encode($dump2,JSON_FORCE_OBJECT);
+$jasonpa = json_encode($dump,JSON_FORCE_OBJECT);
 $jasonbhai = explode(" ", $jasonpa);
 $jasonwf1 = array_filter($jasonbhai);
 //$jasonbhai = json_decode($result);
