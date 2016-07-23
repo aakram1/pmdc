@@ -11,46 +11,43 @@ $numGuests = $_GET["numguests"];
 $destination1 = "SFO";
 $countryCode = "US";
 
-//$workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
-//$result = $workflow->runWorkflow();
+$workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
+$result = $workflow->runWorkflow();
 
+ob_start();
+var_dump($result);
+$dump = ob_get_clean();
+
+//$jasonbhai = print_r(json_decode($result));
+$jasonpa = json_encode($dump2,JSON_FORCE_OBJECT);
+$jasonbhai = explode(" ", $jasonpa);
+$jasonbhai2 = array_filter($jasonbhai);
+//$jasonbhai = json_decode($result);
+print_r($jasonbhai2);
+
+
+/*
 $workflow2 = new ApiRequests(new TopCitiesFlightsEstimates("LAX",["SFO","ORD"], "2016-12-13", "2016-12-16"));
 $result2 = $workflow2->runWorkflow();
 
 ob_start();
 var_dump($result2);
 $dump2 = ob_get_clean();
-//echo $dump2;
 
 
-//ob_start();
-//var_dump($result);
-//$jasonbhai = print_r(json_decode($result));
-//$dump = ob_get_clean();
-
-$jasonpa = json_encode($dump2,JSON_FORCE_OBJECT);
+$jasonpa2 = json_encode($dump2,JSON_FORCE_OBJECT);
 //echo $jasonpa;
 
-$jasonbhai = explode(" ", $jasonpa);
-$jasonbhai2 = array_filter($jasonbhai);
+$jasonbhai2 = explode(" ", $jasonpa2);
+$jasonbhai2a = array_filter($jasonbhai2);
 //$jasonbhai = json_decode($result);
-print_r($jasonbhai2);
+print_r($jasonbhai2a);
 
-/*for ($i = 0; $i <= 25; $i++) {
+for ($i = 0; $i <= 25; $i++) {
 	echo $jasonbhai[$i]."<br>";
-	}*/
-
-
-/*
-$jasonbhai = explode(" ", $dump);
-//$jasonbhai = json_decode($result);
-for ($i = 0; $i <= 1000; $i++) {
-echo $jasonbhai[$i]."<br>";
-}
+	}
+	
 */
-//var_dump(json_decode($dump, true));
-//var_dump($jasonbhai);
-//echo $jasonbhai[0];
 
 flush();
 
