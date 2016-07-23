@@ -53,7 +53,7 @@ $data = json_decode($dump, true);
                 $fareInfo->fares[] = $fareObj;
             }
         }
-        return json_encode(array_values($list->items));
+        print_r(json_encode(array_values($list->items)));
  
 
 /*
