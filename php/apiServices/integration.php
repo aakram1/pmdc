@@ -11,7 +11,7 @@ $numGuests = $_GET["numguests"];
 $destination1 = "SFO";
 $countryCode = "US";
 
-/*
+
 $workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
 $result = $workflow->runWorkflow();
 
@@ -25,6 +25,7 @@ $jasonbhai = explode(" ", $jasonpa);
 $jasonbhai2 = array_filter($jasonbhai);
 //$jasonbhai = json_decode($result);
 
+/*
 for ($i = 0; $i <= 100; $i++) {
 	
 	(preg_match("/php/i"
