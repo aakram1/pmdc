@@ -21,8 +21,8 @@ $dump = ob_get_clean();
 
 echo $dump;
 
-$testicle = unserialize($dump);
-echo $testicle;
+//$testicle = unserialize($dump);
+//echo $testicle;
 
 /*
 //$jasonbhai = print_r(json_decode($result));
