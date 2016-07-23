@@ -19,8 +19,42 @@ ob_start();
 var_dump($result);
 $dump = ob_get_clean();
 
-$testicle = unserialize($dump);
+$testicle = json_decode($dump, true);
+echo $testicle['FareInfo'];
 print_r($testicle);
+
+/*
+ * if (isset($data['FareInfo'])) {
+            $fares = $data['FareInfo'];
+            foreach ($fares as $fare) {
+                $fareInfo = new FareInfo();
+                $airPortCode = $fare['DestinationLocation'];
+                if ($list->keyExists($airPortCode)) {
+                    $fareInfo = $list->getItem($airPortCode);
+                } else {
+                    $geo = $this->translate($airPortCode);
+                    $fareInfo->id = $airPortCode;
+                    $fareInfo->coords = new Geo($geo['latitude'], $geo['longitude']);
+                    $fareInfo->city = $geo['city'];
+                    $fareInfo->currencyCode = $fare['CurrencyCode'];
+                    if (isset($fare['DestinationRank'])) {
+                        $fareInfo->destinationRank = $fare['DestinationRank'];
+                    }
+                    if (isset($fare['Theme'])) {
+                        $fareInfo->theme = $fare['Theme'];
+                    }
+                    $list->addItem($fareInfo, $airPortCode);
+                }
+                $fareObj = new Fare();
+                $fareObj->lowestFare = $fare['LowestFare'];
+				$fareObj->lowestNonStopFare = $fare['LowestNonStopFare'];
+                $fareObj->departureDateTime = $fare['DepartureDateTime'];
+                $fareObj->returnDateTime = $fare['ReturnDateTime'];
+                $fareInfo->fares[] = $fareObj;
+            }
+        }
+        return json_encode(array_values($list->items));
+ */
 
 /*
 //$jasonbhai = print_r(json_decode($result));
