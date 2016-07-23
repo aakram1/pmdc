@@ -19,6 +19,11 @@ ob_start();
 var_dump($result);
 $dump = ob_get_clean();
 
+echo $dump;
+
+$testicle = unserialize($dump);
+echo $testicle;
+
 //$jasonbhai = print_r(json_decode($result));
 $jasonpa = json_encode($dump,JSON_FORCE_OBJECT);
 $jasonbhai = explode(" ", $jasonpa);
