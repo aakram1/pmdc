@@ -22,7 +22,7 @@ $dump = ob_get_clean();
 //$jasonbhai = print_r(json_decode($result));
 $jasonpa = json_encode($dump2,JSON_FORCE_OBJECT);
 $jasonbhai = explode(" ", $jasonpa);
-$jasonbhai2 = array_filter($jasonbhai);
+$jasonwf1 = array_filter($jasonbhai);
 //$jasonbhai = json_decode($result);
 
 /*
@@ -32,7 +32,7 @@ for ($i = 0; $i <= 100; $i++) {
 	echo $jasonbhai[$i]."<br>";
 }
 */
-print_r($jasonbhai2);
+print_r($jasonbhaiwf1);
 
 
 
