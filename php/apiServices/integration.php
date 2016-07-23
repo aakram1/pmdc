@@ -32,8 +32,9 @@ $jasonpa = json_encode($dump2,JSON_FORCE_OBJECT);
 //echo $jasonpa;
 
 $jasonbhai = explode(" ", $jasonpa);
+$jasonbhai2 = array_filter($jasonbhai);
 //$jasonbhai = json_decode($result);
-print_r($jasonbhai);
+print_r($jasonbhai2);
 
 /*for ($i = 0; $i <= 25; $i++) {
 	echo $jasonbhai[$i]."<br>";
