@@ -23,6 +23,7 @@ $dump = ob_get_clean();
 $jasonpa = json_encode($dump,JSON_FORCE_OBJECT);
 $jasonbhai = explode(" ", $jasonpa);
 $jasonwf1 = array_filter($jasonbhai);
+$jasonwf1a = array_values($jasonwf1);
 //$jasonbhai = json_decode($result);
 
 
@@ -30,14 +31,14 @@ $j=0;
 
 for ($i = 0; $i <= 1000; $i++) {
 	
-	if (stripos($jasonwf1[$i], "Fare")) {
-		$cleaned[$j] = $jasonwf1[$i+1];
+	if (stripos($jasonwf1a[$i], "Fare")) {
+		$cleaned[$j] = $jasonwf1a[$i+1];
 		$j++; 
 	}
 }
 
 print_r($cleaned);
-print_r($jasonwf1);
+print_r($jasonwf1a);
 flush();
 
 
