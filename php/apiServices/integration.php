@@ -20,7 +20,7 @@ $result2 = $workflow2->runWorkflow();
 ob_start();
 var_dump($result2);
 $dump2 = ob_get_clean();
-echo $dump2;
+//echo $dump2;
 
 
 //ob_start();
@@ -31,7 +31,7 @@ echo $dump2;
 $jasonpa = json_encode($dump2,JSON_FORCE_OBJECT);
 //echo $jasonpa;
 
-$jasonbhai = explode("\n", $jasonpa);
+$jasonbhai = explode(" ", $jasonpa);
 //$jasonbhai = json_decode($result);
 print_r($jasonbhai);
 
