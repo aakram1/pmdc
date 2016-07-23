@@ -31,6 +31,7 @@ for ($i = 0; $i <= 1000; $i++) {
 	
 	if (stripos($jasonwf1[i], "Fare")) {
 		$cleaned[$j] = $jasonwf1[i+1];
+		echo $cleaned[$j];
 		$j++; 
 	}
 }
