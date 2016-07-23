@@ -25,13 +25,17 @@ $jasonbhai = explode(" ", $jasonpa);
 $jasonwf1 = array_filter($jasonbhai);
 //$jasonbhai = json_decode($result);
 
-/*
+
+$j=0;
 for ($i = 0; $i <= 100; $i++) {
 	
-	(preg_match("/php/i"
-	echo $jasonbhai[$i]."<br>";
+	if (preg_match("\Fare", $jasonwf1[i])) {
+		$cleaned[$j] = $jasonwf1[i+1];
+		$j++; 
+	}
 }
-*/
+
+print_r($cleaned);
 print_r($jasonwf1);
 flush();
 
