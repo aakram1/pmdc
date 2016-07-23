@@ -20,7 +20,7 @@ var_dump($result);
 $dump = ob_get_clean();
 
 $testicle = unserialize($dump);
-echo $testicle;
+print_r($testicle);
 
 /*
 //$jasonbhai = print_r(json_decode($result));
