@@ -19,7 +19,7 @@ ob_start();
 var_dump($result);
 $dump = ob_get_clean();
 
-echo $dump['4'];
+echo $dump[4];
 
 //$testicle = unserialize($dump);
 //echo $testicle;
