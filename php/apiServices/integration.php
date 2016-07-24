@@ -13,10 +13,10 @@ class integration {
 	
 	public function getTopCitiesFlightEstimates() {
 		echo $this->request;
-		$destination = $this->request[0]->destination;
-		$origins = $this->request[0]->origins;
-		$startDate = $this->request[0]->startDate;
-		$endDate = $this->request[0]->endDate;
+		$destination = $this->request->destination;
+		$origins = $this->request->origins;
+		$startDate = $this->request->startDate;
+		$endDate = $this->request->endDate;
 		echo $destination;
 		echo $origins;
 		echo $startDate;
