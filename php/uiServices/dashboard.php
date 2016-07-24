@@ -18,24 +18,24 @@ $numGuests = $_GET["numguests"];
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<script src="js/popupmenu.js"></script>
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/skel.min.js"></script>
+		<script src="../../js/skel-layers.min.js"></script>
+		<script src="../../js/init.js"></script>
+		<script src="../../js/popupmenu.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xsmall.css" />
-			<link rel="stylesheet" href="css/style-small.css" />
-			<link rel="stylesheet" href="css/style-medium.css" />
-			<link rel="stylesheet" href="css/style-large.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" href="../../css/skel.css" />
+			<link rel="stylesheet" href="../../css/style.css" />
+			<link rel="stylesheet" href="../../css/style-xsmall.css" />
+			<link rel="stylesheet" href="../../css/style-small.css" />
+			<link rel="stylesheet" href="../../css/style-medium.css" />
+			<link rel="stylesheet" href="../../css/style-large.css" />
+			<link rel="stylesheet" href="../../css/style-xlarge.css" />
 		</noscript>
 	</head>
 	<body class="landing">
@@ -52,6 +52,7 @@ $numGuests = $_GET["numguests"];
 			</nav>
 		</header>
 		<script type="text/javascript">
+		debugger;
 		 <?php 
 				$request = array("destintation" => "SFO", "origins" => ["LAX", "ORG"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
 				$integration = new integration($request);
