@@ -1,7 +1,7 @@
 <?php
-include 'sabre/workflow/ApiRequests.php';
-include 'sabre/activities/CheapestFaresForDestinationActivity.php';
-include 'sabre/activities/TopCitiesFlightsEstimates.php';
+include_once 'sabre/workflow/ApiRequests.php';
+include_once 'sabre/activities/CheapestFaresForDestinationActivity.php';
+include_once 'sabre/activities/TopCitiesFlightsEstimates.php';
 
 class integration {
 	
