@@ -3,26 +3,22 @@ include_once 'sabre/workflow/ApiRequests.php';
 include_once 'sabre/activities/CheapestFaresForDestinationActivity.php';
 include_once 'sabre/activities/TopCitiesFlightsEstimates.php';
 
-$destination = $_GET["city"];
-$startdate = $_GET["startdate"];
-$enddate = $_GET["enddate"];
-$numGuests = $_GET["numguests"];
-
-$destination1 = "SFO";
-$countryCode = "US";
-
-
-$workflow = new ApiRequests(new CheapestFaresForDestinationActivity($countryCode, $destination1));
-$result = $workflow->runWorkflow();
-
-ob_start();
-var_dump($result);
-$dump = ob_get_clean();
-
-
-flush();
-
-
-
+class integration {
+	
+	private $request;
+	
+	public function __contruct($request) {
+		$this->request = $request;
+	}
+	
+	public function getTopCitiesFlightEstimates() {
+		$destination = $request->destination;
+		$origins = $request->origins;
+		$startDate = $request->startDate;
+		$endDate = $request->endDate;
+		$workflow = new ApiRequests(new TopCitiesFlightsEstimates($destination, $origins, $startDate, $endDate));
+		return $workflow->runWorkflow();
+	}
+}
 
 ?>
