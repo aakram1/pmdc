@@ -51,28 +51,27 @@ $numGuests = $_GET["numguests"];
 				</ul>
 			</nav>
 		</header>
+		<?php 
+			$request = array("destintation" => "SFO", "origins" => ["LAX", "ORG"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
+			$integration = new integration($request);
+			$result = $integration->getTopCitiesFlightEstimates();
+		?>		
 		<script type="text/javascript">
-		debugger;
-		 <?php 
-				$request = array("destintation" => "SFO", "origins" => ["LAX", "ORG"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
-				$integration = new integration($request);
-				$result = $integration->getTopCitiesFlightEstimates();
-			?>
-		var result = JSON.parse( '<?php echo json_encode($result); ?>' );
-		var out = "<table>";
-
-		debugger;
-	    for(i = 0; i < arr.length; i++) {
-	        out += "<tr><td>" +
-	        arr[i].Name +
-	        "</td><td>" +
-	        arr[i].City +
-	        "</td><td>" +
-	        arr[i].Country +
-	        "</td></tr>";
-	    }
-	    out += "</table>";
-	    document.getElementById("resultsTable").innerHTML = out;
+			var result = JSON.parse( '<?php echo json_encode($result); ?>' );
+			var out = "<table>";
+	
+			debugger;
+		    for(i = 0; i < arr.length; i++) {
+		        out += "<tr><td>" +
+		        arr[i].Name +
+		        "</td><td>" +
+		        arr[i].City +
+		        "</td><td>" +
+		        arr[i].Country +
+		        "</td></tr>";
+		    }
+		    out += "</table>";
+		    document.getElementById("resultsTable").innerHTML = out;
 	  	</script>
 	
 		<section id="banner">
