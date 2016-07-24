@@ -165,7 +165,7 @@ $cityconverted = explode(",", $destination);
 $cityName = $cityconverted[0];
 echo $cityName.'<br>';
 
-print_r(CityToCode($cityName));
+echo CityToCode($cityName);
 
 
 ?>
