@@ -51,17 +51,32 @@ $numGuests = $_GET["numguests"];
 				</ul>
 			</nav>
 		</header>
-		<script>
-	
+		<script type="text/javascript">
+		var result = JSON.parse(<?php 
+				$request = array("destintation" => "SFO", "origins" => ["LAX", "ORG"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
+				$integration = new integration($request);
+				$result = $integration->getTopCitiesFlightEstimates();
+				echo json_encode($result);
+			?> );
+		var out = "<table>";
+
+		debugger;
+	    for(i = 0; i < arr.length; i++) {
+	        out += "<tr><td>" +
+	        arr[i].Name +
+	        "</td><td>" +
+	        arr[i].City +
+	        "</td><td>" +
+	        arr[i].Country +
+	        "</td></tr>";
+	    }
+	    out += "</table>";
+	    document.getElementById("resultsTable").innerHTML = out;
 	  	</script>
 	
 		<section id="banner">
 			<h2>Fights are being searched..</h2>
-			<?php 
-				$request
-				$integration = new integration($request);
-				$result = $integration->getTopCitiesFlightEstimates();
-			?>
+			<div id="resultsTable"></div>
 		</section>
 	</body>
 </html>
