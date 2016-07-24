@@ -149,7 +149,7 @@ function CityToCode($city)
 	$row = $airports->filterOne('city', $city);
 	if (isset($row)) {
 		$cityinfo = array('code' => $row['code']);
-		return $cityinfo;
+		return $cityinfo[0];
 	}
 }
 
