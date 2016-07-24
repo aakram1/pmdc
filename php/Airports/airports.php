@@ -163,9 +163,9 @@ function airports($code)
 $destination = $_GET["city"];
 $cityconverted = explode(",", $destination);
 $cityName = $cityconverted[0];
-echo $cityName.'<br>';
+echo $cityName.'<br>'.'Pakistan Zindabad';
 
-echo CityToCode($cityName);
+print_r(CityToCode($cityName));
 
 
 ?>
