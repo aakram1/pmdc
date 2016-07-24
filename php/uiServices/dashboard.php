@@ -1,5 +1,5 @@
 <?php
-include_once ('php/apiServices/integration.php');
+include_once ('/php/apiServices/integration.php');
 
 $destination = $_GET["city"];
 $startdate = $_GET["startdate"];
