@@ -1,6 +1,6 @@
 <?php
-include_once 'sabre/workflow/Activity.php';
-include_once 'sabre/restServices/RestClient.php';
+include_once 'php/apiServices/sabre/workflow/Activity.php';
+include_once 'php/apiServices/sabre/restServices/RestClient.php';
 class TopCitiesFlightsEstimates implements Activity {
     private $destination, $origins, $startDate, $endDate;
     
