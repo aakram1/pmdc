@@ -35,6 +35,7 @@ $numGuests = $_GET["numguests"];
 			$request = array("destintation" => "SFO", "origins" => ["LAX", "ORG"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
 			$integration = new integration($request);
 			$result = $integration->getTopCitiesFlightEstimates();
+			dump($result)
 		?>		
 		<script type="text/javascript">
 			var result = JSON.parse( '<?php echo json_encode($result); ?>' );
