@@ -29,13 +29,13 @@ $numGuests = $_GET["numguests"];
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="../../css/skel.css" />
-			<link rel="stylesheet" href="../../css/style.css" />
-			<link rel="stylesheet" href="../../css/style-xsmall.css" />
-			<link rel="stylesheet" href="../../css/style-small.css" />
-			<link rel="stylesheet" href="../../css/style-medium.css" />
-			<link rel="stylesheet" href="../../css/style-large.css" />
-			<link rel="stylesheet" href="../../css/style-xlarge.css" />
+			<link rel="stylesheet" href="../css/skel.css" />
+			<link rel="stylesheet" href="../css/style.css" />
+			<link rel="stylesheet" href="../css/style-xsmall.css" />
+			<link rel="stylesheet" href="../css/style-small.css" />
+			<link rel="stylesheet" href="../css/style-medium.css" />
+			<link rel="stylesheet" href="../css/style-large.css" />
+			<link rel="stylesheet" href="../css/style-xlarge.css" />
 		</noscript>
 	</head>
 	<body class="landing">
