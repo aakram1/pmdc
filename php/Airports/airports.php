@@ -149,7 +149,7 @@ function CityToCode($city)
 	$row = $airports->filterOne('city', $city);
 	if (isset($row)) {
 		$cityinfo = array('code' => $row['code']);
-		return $cityinfo;
+		return array_values($cityinfo);
 	}
 }
 
@@ -163,9 +163,9 @@ function airports($code)
 $destination = $_GET["city"];
 $cityconverted = explode(",", $destination);
 $cityName = $cityconverted[0];
-echo $cityName.'<br>'.'Pakistan Zindabad';
+echo $cityName.'<br>';
 
-print_r(CityToCode($cityName));
+echo CityToCode($cityName);
 
 
 ?>
