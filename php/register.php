@@ -5,7 +5,7 @@
 // DB, DBUSER, DBPASS, DBSERVER, USERS
 
 // require common code
-    require_once("php/inc/common.inc"); 
+    require_once("/app/php/inc/common.inc"); 
 
 
 /* check table for username- inherited username */

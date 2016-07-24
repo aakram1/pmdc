@@ -19,7 +19,7 @@
 
 //echo "Top of the php";
 // Enter the path that the oauth library is in relation to the php file
-require_once('lib/OAuth.php');
+require_once('../OAuth.php');
 // Set your OAuth credentials here  
 // These credentials can be obtained from the 'Manage API Access' page in the
 // developers documentation (http://www.yelp.com/developers)
