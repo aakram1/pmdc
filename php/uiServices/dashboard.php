@@ -52,12 +52,12 @@ $numGuests = $_GET["numguests"];
 			</nav>
 		</header>
 		<script type="text/javascript">
-		var result = JSON.parse(<?php 
+		 <?php 
 				$request = array("destintation" => "SFO", "origins" => ["LAX", "ORG"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
 				$integration = new integration($request);
 				$result = $integration->getTopCitiesFlightEstimates();
-				echo json_encode($result);
-			?> );
+			?>
+		var result = JSON.parse( '<?php echo json_encode($result); ?>' );
 		var out = "<table>";
 
 		debugger;
