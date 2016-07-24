@@ -16,10 +16,6 @@ class integration {
 		$origins = $request[0]->origins;
 		$startDate = $request[0]->startDate;
 		$endDate = $request[0]->endDate;
-		echo $destination;
-		echo $origins;
-		echo $startDate;
-		echo $endDate;
 		$workflow = new ApiRequests(new TopCitiesFlightsEstimates($destination, $origins, $startDate, $endDate));
 		return $workflow->runWorkflow();
 	}
