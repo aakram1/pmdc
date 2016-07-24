@@ -1,5 +1,5 @@
 <?php
-include_once 'app/php/apiServices/sabre/configuration/ApiConfig.php';
+include_once '/app/php/apiServices/sabre/configuration/ApiConfig.php';
 class Auth {
     
     private $config;
