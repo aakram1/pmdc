@@ -148,7 +148,8 @@ function CityToCode($city)
 	$airports = FileDB::entity('airports');
 	$row = $airports->filterOne('name', $city);
 	if (isset($row)) {
-		return array('longitude' => $row['lon'], 'latitude' => $row['lat'], 'code' => $row['code']);
+		$cityinfo = array('longitude' => $row['lon'], 'latitude' => $row['lat'], 'code' => $row['code']);
+		return $cityinfo;
 	}
 }
 
@@ -164,7 +165,7 @@ $cityconverted = explode(",", $destination);
 $cityName = $cityconverted[0];
 echo $cityName.'<br>';
 
-echo CityToCode($cityName);
+print_r(CityToCode($cityName));
 
 
 ?>
