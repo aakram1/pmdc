@@ -19,5 +19,6 @@ $sendgrid->send($email);
 //$subject = "Test";
 //mail($ToEmail, $subject, $Message, $headers);
 //echo "Email sent to ".$ToEmail." with subject ".$subject;
+echo "Email sent";
 
 ?>
