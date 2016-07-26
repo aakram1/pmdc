@@ -22,7 +22,7 @@ $subject = "Pakistan ka matlab kya?";
 $to = new SendGrid\Email("Omer Aftab", "omeraftab235@gmail.com");
 $content = new SendGrid\Content("text/plain", "Pakistan Zindabad!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
-$apiKey = getenv('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');
+$apiKey = getenv('Authorization: Bearer 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');
 $sg = new \SendGrid($apiKey);
 $response = $sg->client->mail()->send()->post($mail);
 echo $response->statusCode();
