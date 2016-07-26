@@ -1,6 +1,6 @@
 <?php
 
-require '/app/vendor/autoload.php';
+require '../vendor/autoload.php';
 $sendgrid = new SendGrid('app52008467@heroku.com', 'asvwlyiw5947');
 
 $email = new SendGrid\Email();
