@@ -1,6 +1,8 @@
 <?php
 
 require '../vendor/autoload.php';
+
+/* sendgrid v2
 $sendgrid = new SendGrid('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');
 //$sendgrid = new SendGrid('app52008467@heroku.com', 'asvwlyiw5947');
 //
@@ -12,7 +14,21 @@ $email->addTo('omeraftab235@gmail.com')
 	->setText('Pakistan Zindabad!')
 	->setHtml('<strong>Pakistan Zindabad!</strong>');
 
-$sendgrid->send($email);
+$sendgrid->send($email); */
+
+
+$from = new SendGrid\Email("Baarei Admin", "noreply@baarei.com");
+$subject = "Pakistan ka matlab kya?";
+$to = new SendGrid\Email("Omer Aftab", "omeraftab235@gmail.com");
+$content = new SendGrid\Content("text/plain", "Pakistan Zindabad!");
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
+$apiKey = getenv('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');
+$sg = new \SendGrid($apiKey);
+$response = $sg->client->mail()->send()->post($mail);
+echo $response->statusCode();
+echo $response->headers();
+echo $response->body();
+
 
 // make into class
 //$headers = 'From: noreply@baarei.com';
