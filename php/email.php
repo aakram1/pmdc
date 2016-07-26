@@ -28,7 +28,7 @@ $response = $sg->client->mail()->send()->post($mail);
 echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
-
+echo "Email sent?";
 
 // make into class
 //$headers = 'From: noreply@baarei.com';
@@ -37,6 +37,6 @@ echo $response->body();
 //$subject = "Test";
 //mail($ToEmail, $subject, $Message, $headers);
 //echo "Email sent to ".$ToEmail." with subject ".$subject;
-echo "Email sent";
+//echo "Email sent";
 
 ?>
