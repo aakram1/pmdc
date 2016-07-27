@@ -1,4 +1,6 @@
 <?php
+use function GuzzleHttp\json_decode;
+
 include_once ('/app/php/apiServices/integration.php');
 
 $destination = $_GET["city"];
@@ -36,7 +38,8 @@ $numGuests = $_GET["numguests"];
 			$my_int = new integration();
 			$sharedContext = $my_int->getTopCitiesFlightEstimates($request);
 			$result = $sharedContext->getResult("LAX");
-			var_dump($result);
+			$decoded_data = json_decode($result);
+			print_r($decoded_data);
 		?>
 				
 		<script type="text/javascript">
