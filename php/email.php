@@ -26,7 +26,9 @@ $mail = new SendGrid\Mail($from, $subject, $to, $content);
 //$apiKey = getenv('Authorization: Bearer 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');
 //full access key: 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
 //$apiKey = getenv('Authorization: Bearer BiyrbV__TjmEWjN2qPvhMw');
-$apiKey = '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';
+//$apiKey = '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';
+
+$apiKey = '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';
 
 $sg = new \SendGrid($apiKey);
 $response = $sg->client->mail()->send()->post($mail);
