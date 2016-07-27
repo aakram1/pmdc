@@ -9,6 +9,8 @@ $listingcount = '10';
 $apikey='tq6j8nz7b8';
 
 $url = 'http://api2.yp.com/listings/v1/search?searchloc='.$zipcode.'&term='.$term.'&format=json&sort=distance&radius='.$radius.'&listingcount='.$listingcount.'&key='.$apikey;
+echo $url;
+
 // create a new cURL resource
 $ch = curl_init();
 // set URL and other appropriate options
