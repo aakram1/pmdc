@@ -34,7 +34,8 @@ $numGuests = $_GET["numguests"];
 		<?php 
 			$request = array("destination" => "SFO", "origins" => ["LAX", "ORD"], "startDate" => "2016-12-12", "endDate" => "2016-12-16");
 			$my_int = new integration();
-			$result = $my_int->getTopCitiesFlightEstimates($request);
+			$sharedContext = $my_int->getTopCitiesFlightEstimates($request);
+			$result = $sharedContext->getResult("LAX");
 		?>
 				
 		<script type="text/javascript">
