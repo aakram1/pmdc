@@ -3,7 +3,7 @@ class SharedContext {
 	// results processor 
     private $results;
     
-    public function SharedContext() {
+    public function __construct() {
         $this->results["SECURITY"] = null;
     }
     

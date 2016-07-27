@@ -6,7 +6,7 @@ class ApiRequests {
     private $sharedContext;
     private $startActivity;
     
-    public function ApiRequests(&$startActivity) {
+    public function __construct(&$startActivity) {
         $this->startActivity = $startActivity;
     }
     
