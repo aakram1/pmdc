@@ -7,7 +7,7 @@ class integration {
 	
 	private $request;
 	
-	public function __contruct($request) {
+	public function __contruct(&$request) {
 		$this->request = $request;
 	}
 	
