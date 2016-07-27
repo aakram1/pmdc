@@ -40,6 +40,7 @@ $numGuests = $_GET["numguests"];
 				
 		<script type="text/javascript">
 			var result = JSON.parse( '<?php echo json_encode($result); ?>' );
+			console.log("Result from json" + result);
 			var out = "<table>";
 
 		    for(i = 0; i < arr.length; i++) {
