@@ -26,7 +26,6 @@ $file_contents = curl_exec($ch);
 curl_close($ch);
 
 $RawJason = $file_contents;
-echo $RawJason;
 
 //http://pubapi.yp.com/search-api/search/devapi/search?searchloc=94080&term=projector&format=json&sort=distance&radius=5&listingcount=10&key=tq6j8nz7b8
 //http://api2.yp.com/listings/v1/search?searchloc=94080&term=projector&format=json&sort=distance&radius=5&listingcount=10&key=tq6j8nz7b8
@@ -36,14 +35,13 @@ echo $RawJason;
 
 
 $CodedJason = json_encode($RawJason,JSON_FORCE_OBJECT); 
-echo $CodedJason;
 
 ?>
 
 
 
 <script type="text/javascript">
-			var result = JSON.parse( '<?php echo $CodedJason; ?>' );
+			var result = JSON.parse( '<?php echo $RawJason ?>' );
 			var out = "<table>";
 			debugger;
 		    for(i = 0; i < arr.length; i++) {
