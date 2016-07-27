@@ -5,10 +5,7 @@ include_once '/app/php/apiServices/sabre/activities/TopCitiesFlightsEstimates.ph
 
 class integration {
 	
-	private $request;
-	
-	public function __contruct(&$request) {
-		$this->request = $request;
+	public function __contruct() {
 	}
 	
 	public function getTopCitiesFlightEstimates($request) {
@@ -17,7 +14,6 @@ class integration {
 		$origins = $request["origins"];
 		$startDate = $request["startDate"];
 		$endDate = $request["endDate"];
-		echo $destination;
 		$workflow = new ApiRequests(new TopCitiesFlightsEstimates($destination, $origins, $startDate, $endDate));
 		return $workflow->runWorkflow();
 	}

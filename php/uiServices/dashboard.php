@@ -32,8 +32,8 @@ $numGuests = $_GET["numguests"];
 			</nav>
 		</header>
 		<?php 
-			$request = array("destination" => "SFO", "origins" => ["LAX", "ORD"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
-			$my_int = new integration($request);
+			$request = array("destination" => "SFO", "origins" => ["LAX", "ORD"], "startDate" => "2016-12-12", "endDate" => "2016-12-16");
+			$my_int = new integration();
 			$result = $my_int->getTopCitiesFlightEstimates($request);
 			var_dump($result);
 		?>
