@@ -36,12 +36,12 @@ $numGuests = $_GET["numguests"];
 			$integration = new integration($request);
 			$result = $integration->getTopCitiesFlightEstimates();
 			var_dump($result);
-		?>		
+		?>
+				
 		<script type="text/javascript">
 			var result = JSON.parse( '<?php echo json_encode($result); ?>' );
 			var out = "<table>";
-	
-			debugger;
+
 		    for(i = 0; i < arr.length; i++) {
 		        out += "<tr><td>" +
 		        arr[i].Name +
