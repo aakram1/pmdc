@@ -8,7 +8,7 @@ $radius = '5';
 $listingcount = '10';
 $apikey='tq6j8nz7b8';
 
-$url = 'http://api2.yp.com/listings/v1/search?searchloc='.$zipcode.'&term='.$term.'&format=json&sort=distance&radius='.$radius.'&listingcount='.$listingcount.'&key='.$apikey;
+$url = 'http://pubapi.yp.com/search-api/search/devapi/search?searchloc='.$zipcode.'&term='.$term.'&format=json&sort=distance&radius='.$radius.'&listingcount='.$listingcount.'&key='.$apikey;
 echo $url;
 
 // create a new cURL resource
@@ -23,6 +23,8 @@ curl_close($ch);
 
 $RawJason = $file_contents;
 echo $RawJason;
+
+//http://pubapi.yp.com/search-api/search/devapi/search?searchloc=94080&term=projector&format=json&sort=distance&radius=5&listingcount=10&key=tq6j8nz7b8
 //http://api2.yp.com/listings/v1/search?searchloc=94080&term=projector&format=json&sort=distance&radius=5&listingcount=10&key=tq6j8nz7b8
 //ob_start();
 //var_dump($result);
