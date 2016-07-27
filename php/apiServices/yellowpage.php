@@ -34,7 +34,7 @@ $CodedJason = json_encode($RawJason,JSON_FORCE_OBJECT); ?>
 			debugger;
 		    for(i = 0; i < arr.length; i++) {
 		        out += "<tr><td>" +
-		        arr[i].Name +
+		        arr[i].SearchListings +
 		        "</td><td>" +
 		        arr[i].City +
 		        "</td><td>" +
