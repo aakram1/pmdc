@@ -34,5 +34,4 @@ class TopCitiesFlightsEstimates implements Activity {
         return $request;
     }
 }
-
 ?>
