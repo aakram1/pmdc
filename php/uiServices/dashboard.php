@@ -39,18 +39,9 @@ $numGuests = $_GET["numguests"];
 				
 		<script type="text/javascript">
 			var result = JSON.parse( '<?php echo $result ?>' );
-			console.log("Result from json" + result);
+			console.log(result);
 			var out = "<table>";
 
-		    for(i = 0; i < arr.length; i++) {
-		        out += "<tr><td>" +
-		        arr[i].Name +
-		        "</td><td>" +
-		        arr[i].City +
-		        "</td><td>" +
-		        arr[i].Country +
-		        "</td></tr>";
-		    }
 		    out += "</table>";
 		    document.getElementById("resultsTable").innerHTML = out;
 	  	</script>
