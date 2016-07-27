@@ -33,8 +33,8 @@ $numGuests = $_GET["numguests"];
 		</header>
 		<?php 
 			$request = array("destination" => "SFO", "origins" => ["LAX", "ORD"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
-			$integration = new integration();
-			$result = $integration->getTopCitiesFlightEstimates($request);
+			$integration = new integration($request);
+			$result = $integration->getTopCitiesFlightEstimates();
 			var_dump($result);
 		?>
 				
