@@ -12,12 +12,11 @@ class integration {
 	}
 	
 	public function getTopCitiesFlightEstimates($request) {
+		$request = array("destination" => "SFO", "origins" => ["LAX", "ORD"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
 		$destination = $request->destination;
 		$origins = $request->origins;
 		$startDate = $request->startDate;
 		$endDate = $request->endDate;
-		echo "Here";
-		echo $destination;
 		$workflow = new ApiRequests(new TopCitiesFlightsEstimates($destination, $origins, $startDate, $endDate));
 		return $workflow->runWorkflow();
 	}
