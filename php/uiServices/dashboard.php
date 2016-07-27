@@ -34,14 +34,14 @@ $numGuests = $_GET["numguests"];
 		<?php 
 			$request = array("destination" => "SFO", "origins" => ["LAX", "ORD"], "startDate" => "2016/12/12", "endDate" => "2016/12/16");
 			$integration = new integration($request);
-			$result = $integration->getTopCitiesFlightEstimates();
+			$result = $integration->getTopCitiesFlightEstimates($request);
 			var_dump($result);
-		?>		
+		?>
+				
 		<script type="text/javascript">
 			var result = JSON.parse( '<?php echo json_encode($result); ?>' );
 			var out = "<table>";
-	
-			debugger;
+
 		    for(i = 0; i < arr.length; i++) {
 		        out += "<tr><td>" +
 		        arr[i].Name +

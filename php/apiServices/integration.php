@@ -11,16 +11,13 @@ class integration {
 		$this->request = $request;
 	}
 	
-	public function getTopCitiesFlightEstimates() {
-		echo $this->request;
-		$destination = $this->request->destination;
-		$origins = $this->request->origins;
-		$startDate = $this->request->startDate;
-		$endDate = $this->request->endDate;
+	public function getTopCitiesFlightEstimates($request) {
+		$destination = $request->destination;
+		$origins = $request->origins;
+		$startDate = $request->startDate;
+		$endDate = $request->endDate;
+		echo "Here";
 		echo $destination;
-		echo $origins;
-		echo $startDate;
-		echo $endDate;
 		$workflow = new ApiRequests(new TopCitiesFlightsEstimates($destination, $origins, $startDate, $endDate));
 		return $workflow->runWorkflow();
 	}
