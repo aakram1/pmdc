@@ -36,11 +36,12 @@ $numGuests = $_GET["numguests"];
 			$my_int = new integration();
 			$sharedContext = $my_int->getTopCitiesFlightEstimates($request);
 			$result = $sharedContext->getResult("LAX");
+			var_dump($result);
 		?>
 				
 		<script type="text/javascript">
 			var result = JSON.parse( '<?php echo $result ?>' );
-			console.log(result);
+			
 			var out = "<table>";
 
 		    out += "</table>";
