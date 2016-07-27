@@ -12,7 +12,6 @@ class integration {
 	}
 	
 	public function getTopCitiesFlightEstimates($request) {
-		var_dump($request);
 		$destination = $request->destination;
 		$origins = $request->origins;
 		$startDate = $request->startDate;
